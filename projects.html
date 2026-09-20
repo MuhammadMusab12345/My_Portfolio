@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Web Projects — Muhammad Musab | Full-Stack Developer</title>
+  
+  <meta name="description" content="Explore all 6 web development projects by Muhammad Musab, including responsive business websites and high-performance 3D web experiences.">
+  <link rel="icon" type="image/png" href="assets/images/Logo 2.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Floating Navbar -->
+  <header class="site-navbar" id="siteNavbar">
+    <div class="container navbar-inner">
+      
+      <a href="index.html#hero" class="brand-logo" id="brandLogoLink">
+        <img src="assets/images/Logo 2.png" alt="Muhammad Musab Logo" class="brand-logo-img" onerror="this.src='Logo 2.png'">
+      </a>
+
+      <nav class="nav-menu" id="desktopNavMenu">
+        <a href="index.html#hero" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="index.html#about" class="nav-link">About Me</a>
+        <a href="index.html#process" class="nav-link">Process</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="index.html#testimonials" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-sage-solid nav-cta-btn magnetic-btn" id="navCtaBtn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavOverlay">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <button class="mobile-nav-close-btn" id="closeMobileNavBtn" aria-label="Close navigation menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="mobile-nav-menu">
+      <a href="index.html#hero" class="mobile-nav-link">Home</a>
+      <a href="index.html#services" class="mobile-nav-link">Services</a>
+      <a href="projects.html" class="mobile-nav-link active">All Projects</a>
+      <a href="index.html#about" class="mobile-nav-link">About Me</a>
+      <a href="index.html#process" class="mobile-nav-link">My Process</a>
+      <a href="index.html#pricing" class="mobile-nav-link">Pricing</a>
+      <a href="index.html#testimonials" class="mobile-nav-link">Reviews</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-sage-solid" style="margin-top: 16px; width: 100%;">
+        <span>Let's Talk</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Projects Hero Header Banner (Dark Navy) -->
+  <section class="section-dark projects-page-hero">
+    <div class="glow-blob sage" style="top: 15%; left: 30%; width: 450px; height: 450px;"></div>
+    
+    <div class="container">
+      <div class="eyebrow sage-pill" style="margin-bottom: 20px;">
+        <i class="fa-solid fa-code-fork"></i>
+        <span>Full Portfolio</span>
+      </div>
+      <h1 class="section-title" style="font-size: clamp(2.4rem, 4vw, 3.5rem); margin-bottom: 16px;">
+        All Web Development Projects
+      </h1>
+      <p class="section-subtitle" style="margin: 0 auto; max-width: 650px;">
+        Explore my complete collection of custom web applications, full-stack platforms, and high-performance 3D digital experiences.
+      </p>
+
+      <div style="margin-top: 24px;">
+        <a href="index.html" class="btn btn-outline magnetic-btn" style="padding: 10px 22px; font-size: 0.875rem;">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid Section (Cream Dotted Background) -->
+  <section class="section-light" style="padding-top: 60px; min-height: 80vh;">
+    <div class="container">
+
+      <!-- Interactive Category Filter Pills -->
+      <div class="category-filter-pills" id="projectFilterPills">
+        <button class="filter-pill active" data-filter="all">All Projects (6)</button>
+        <button class="filter-pill" data-filter="normal">Standard Websites (3)</button>
+        <button class="filter-pill" data-filter="3d">3D &amp; Interactive (3)</button>
+      </div>
+
+      <!-- 2-Column Grid Across 3 Rows (2, 2, 2 Layout) -->
+      <div class="projects-grid two-columns" id="allProjectsGrid">
+        
+        <!-- Project 1: Shale Pizzas (Normal) -->
+        <div class="project-card project-item-card" data-category="normal">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (4).png" alt="Shale Pizzas" onerror="this.src='My Websites (4).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">UI/UX</span>
+            </div>
+            <h3 class="project-title">Shale Pizzas</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Bold &amp; Fiery Artisan Pizza Restaurant Experience
+            </p>
+            <p class="project-desc">A bold, modern pizza restaurant website with fiery orange accents, interactive digital menus, online reservation flow, and mouth-watering visuals.</p>
+            <div class="project-footer">
+              <a href="https://laiba-iqbal.github.io/shale-pizza/" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: FurEver Care (Normal) -->
+        <div class="project-card project-item-card" data-category="normal">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (5).png" alt="FurEver Care" onerror="this.src='My Websites (5).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Responsive Design</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">Front-End</span>
+            </div>
+            <h3 class="project-title">FurEver Care</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Playful &amp; Friendly Veterinary &amp; Pet Health Portal
+            </p>
+            <p class="project-desc">A friendly pet-care and veterinary services website with cheerful yellow accents, playful illustrations, service appointment booking, and wellness info.</p>
+            <div class="project-footer">
+              <a href="https://abdul-rafay-art.github.io/furever-care/" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: School's Info (Normal) -->
+        <div class="project-card project-item-card" data-category="normal">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (6).png" alt="School's Info" onerror="this.src='My Websites (6).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Education</span>
+            </div>
+            <h3 class="project-title">School's Info</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Structured &amp; Comprehensive Educational Admissions Portal
+            </p>
+            <p class="project-desc">A clean, professional school information and student admissions portal with structured academic pathways, faculty highlights, and online enrollment guides.</p>
+            <div class="project-footer">
+              <a href="https://muhammadmusab12345.github.io/School-Informations/" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: SDI Presence (3D Website) -->
+        <div class="project-card project-item-card" data-category="3d">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag badge-3d">3D Website</span>
+            <img src="assets/images/My Websites (2).png" alt="SDI Presence" onerror="this.src='My Websites (2).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">3D Web</span>
+              <span class="project-tag">WebGL</span>
+              <span class="project-tag">Corporate IT</span>
+            </div>
+            <h3 class="project-title">SDI Presence</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Enterprise IT &amp; Isometric 3D City Visualization
+            </p>
+            <p class="project-desc">A premier corporate IT &amp; technology services platform featuring an isometric 3D city landscape, interactive solution architecture, and enterprise digital transformation.</p>
+            <div class="project-footer">
+              <a href="https://www.sdipresence.com/" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Ducati — Superleggera V4 (3D Website) -->
+        <div class="project-card project-item-card" data-category="3d">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag badge-3d">3D Website</span>
+            <img src="assets/images/My Websites (1).png" alt="Ducati Superleggera V4" onerror="this.src='My Websites (1).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Luxury Showcase</span>
+              <span class="project-tag">3D Experience</span>
+              <span class="project-tag">High Performance</span>
+            </div>
+            <h3 class="project-title">Ducati — Superleggera V4</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Cinematic High-End Superbike Digital Showcase
+            </p>
+            <p class="project-desc">A luxury motorcycle showcase website featuring dramatic product photography, interactive engineering specs, aerodynamic breakdowns, and high-performance craftsmanship.</p>
+            <div class="project-footer">
+              <a href="https://superleggerav4centenario.ducati.com/en/ww" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Emons Logistics (3D Website) -->
+        <div class="project-card project-item-card" data-category="3d">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag badge-3d">3D Website</span>
+            <img src="assets/images/My Websites (3).png" alt="Emons Logistics" onerror="this.src='My Websites (3).png'" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">3D Logistics</span>
+              <span class="project-tag">Interactive Web</span>
+              <span class="project-tag">Enterprise UI</span>
+            </div>
+            <h3 class="project-title">Emons Logistics</h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-slate); margin-bottom: 8px;">
+              Global Freight &amp; Isometric 3D Smart Warehouse Ecosystem
+            </p>
+            <p class="project-desc">A global logistics &amp; freight-forwarding company website with an interactive isometric 3D warehouse ecosystem, fleet tracking interfaces, and European shipping solutions.</p>
+            <div class="project-footer">
+              <a href="https://www.emons.de/en" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Call To Action -->
+      <div class="projects-bottom-cta-card">
+        <h3 style="font-family: var(--font-heading); font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 800; color: var(--text-dark-primary); margin-bottom: 12px;">
+          Need a Custom Website Built for Your Business?
+        </h3>
+        <p style="color: var(--text-dark-secondary); max-width: 550px; margin: 0 auto 28px auto;">
+          Whether you require a clean responsive layout or a full-stack database system, let's turn your ideas into a high-converting digital product.
+        </p>
+        <a href="contact.html" class="btn btn-gradient magnetic-btn">
+          <span>Let's Discuss Your Project</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="index.html#hero" class="brand-logo footer-brand-logo">
+            <img src="assets/images/Logo 2.png" alt="Muhammad Musab Logo" class="brand-logo-img" onerror="this.src='Logo 2.png'">
+          </a>
+          <p class="footer-tagline-quote">"Develop. Build. Deliver."</p>
+          <p class="footer-desc">Crafting state-of-the-art web solutions with clean front-end code, scalable PHP backends, and intuitive user experiences.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#hero" class="footer-link">Home</a></li>
+            <li><a href="index.html#services" class="footer-link">Services</a></li>
+            <li><a href="projects.html" class="footer-link">All Projects</a></li>
+            <li><a href="index.html#about" class="footer-link">About Me</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#services" class="footer-link">Custom Web Design</a></li>
+            <li><a href="index.html#services" class="footer-link">Full-Stack Development</a></li>
+            <li><a href="index.html#services" class="footer-link">Responsive Web Design</a></li>
+            <li><a href="index.html#services" class="footer-link">UI / UX Prototyping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <p class="footer-desc">Email: <a href="mailto:musabmehtabmusab1@gmail.com" style="color: var(--accent-sage);">musabmehtabmusab1@gmail.com</a></p>
+          <div class="contact-socials-wrap" style="margin-top: 16px;">
+            <a href="https://www.facebook.com/share/1CXeQoBHsq/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Facebook Profile"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/muhammadmusab.official?stkn=dGZvdHVnMjB5eTlx" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/MuhammadMusab12345" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:musabmehtabmusab1@gmail.com" class="social-circle-btn" aria-label="Email Musab"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Muhammad Musab. All Rights Reserved. Engineered with precision.</p>
+        <div class="footer-bottom-links">
+          <button class="open-resume-modal-btn footer-link" style="background:none; border:none; color:inherit; cursor:pointer;">View Résumé</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Lightbox Modal -->
+  <div class="resume-modal-overlay" id="resumeModalOverlay">
+    <div class="resume-modal-card">
+      <div class="resume-modal-header">
+        <div class="modal-header-title">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Muhammad Musab — Official Résumé</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-sage-solid" id="downloadResumeBtn" style="padding: 8px 18px; font-size: 0.85rem;">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </button>
+          <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <img src="https://raw.githubusercontent.com/MuhammadMusab12345/My-Resume/refs/heads/main/Muhammad-Musab-Resume.png" alt="Muhammad Musab Resume" id="resumeModalImage" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/resume-modal.js"></script>
+
+  <!-- Filter JavaScript for Projects Page -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('#projectFilterPills .filter-pill');
+      const projectCards = document.querySelectorAll('.project-item-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterVal = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (filterVal === 'all' || cardCat === filterVal) {
+              card.style.display = 'flex';
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

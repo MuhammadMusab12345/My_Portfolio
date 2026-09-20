@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Musab — Full-Stack Website Developer | Luxury Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" 2
+    content="Official portfolio of Muhammad Musab — Full-Stack Website Developer specializing in custom web design, PHP & MySQL back-end architecture, responsive front-ends, and 3D web experiences.">
+  <meta name="keywords"
+    content="Muhammad Musab, Full Stack Web Developer, PHP Developer, MySQL, Front-End Developer, Back-End Developer, Responsive Web Design">
+  <meta name="author" content="Muhammad Musab">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/Logo 2.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GSAP & ScrollTrigger Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. NAVBAR (Transparent over Hero -> Frosted Glass on Scroll)
+       ========================================================================= -->
+  <header class="site-navbar" id="siteNavbar">
+    <div class="container navbar-inner">
+
+      <!-- Left: Bare Logo -->
+      <a href="#hero" class="brand-logo" id="brandLogoLink">
+        <img src="assets/images/Logo 2.png" alt="Muhammad Musab Logo" class="brand-logo-img"
+          onerror="this.src='Logo 2.png'">
+      </a>
+
+      <!-- Center: Nav Links (Desktop) -->
+      <nav class="nav-menu" id="desktopNavMenu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Far Right: Solid Sage-Green CTA Pill Button -->
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-sage-solid nav-cta-btn magnetic-btn" id="navCtaBtn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobileNavOverlay">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <button class="mobile-nav-close-btn" id="closeMobileNavBtn" aria-label="Close navigation menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="mobile-nav-menu">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="projects.html" class="mobile-nav-link">All Projects</a>
+      <a href="#about" class="mobile-nav-link">About Me</a>
+      <a href="#process" class="mobile-nav-link">My Process</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing</a>
+      <a href="#testimonials" class="mobile-nav-link">Client Reviews</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-sage-solid" style="margin-top: 16px; width: 100%;">
+        <span>Let's Talk</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </nav>
+  </div>
+
+  <!-- =========================================================================
+       2. HERO SECTION (Dark Navy with Reference Hero Layout & Cutout Overlap)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <!-- Atmospheric Glow Blobs -->
+    <div class="glow-blob sage" style="top: 15%; left: 5%; width: 380px; height: 380px;"></div>
+    <div class="glow-blob slate" style="bottom: 10%; right: 10%; width: 450px; height: 450px;"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left Column: Reference Layout Typography & Trust Elements -->
+        <div class="hero-content">
+
+          <!-- Rotating Role Badge (2-Second Cycle) -->
+          <div class="rotating-role-wrapper">
+            <span class="role-pulse-dot"></span>
+            <span class="rotating-role-text" id="rotatingRoleText">Full Stack Website Developer</span>
+          </div>
+
+          <!-- Hero Identity Block (Greeting, Name, Role, Mission) -->
+          <div class="hero-intro-lead">
+            <div class="hero-intro-name-wrap">
+              <span class="hero-intro-greet">HI, I'M</span>
+              <span class="hero-intro-name">MUHAMMAD MUSAB</span>
+            </div>
+            <div class="hero-intro-role">WEB DEVELOPER &amp; GRAPHIC DESIGNER</div>
+            <p class="hero-intro-mission">I BUILD MODERN WEBSITES &amp; CREATIVE DIGITAL EXPERIENCES.</p>
+          </div>
+
+
+
+          <!-- Recommendation & Rating Line -->
+          <div class="hero-ref-rating-line">
+            <span>99% recommendation rate</span>
+            <span class="rating-stars-gold">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span>4.9 on Google &amp; Client Reviews</span>
+          </div>
+
+          <!-- Monochrome Trust Badges Row (from Reference) -->
+          <div class="hero-ref-badges-row">
+            <div class="hero-ref-badge-item">
+              <i class="fa-solid fa-star"></i>
+              <span>Trustpilot ★★★★★</span>
+            </div>
+            <div class="hero-ref-badge-item">
+              <i class="fa-brands fa-wordpress"></i>
+              <span>WordPress</span>
+            </div>
+            <div class="hero-ref-badge-item">
+              <i class="fa-brands fa-google"></i>
+              <span>Google Partner</span>
+            </div>
+            <div class="hero-ref-badge-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ProvenExpert</span>
+            </div>
+          </div>
+
+          <!-- Combined CTA Group: Pill Button + Adjoining Circle Arrow -->
+          <div class="hero-ref-cta-group">
+            <a href="contact.html" class="hero-ref-main-btn magnetic-btn" id="heroRequestQuoteBtn">
+              <span>Request a quote now, no obligation.</span>
+            </a>
+            <a href="projects.html" class="hero-ref-arrow-btn magnetic-btn" aria-label="Explore Projects">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Floating Portrait / Responsive Framed Cutout on Mobile -->
+        <div class="hero-portrait-col">
+          <div class="hero-glow-backdrop"></div>
+          <div class="hero-portrait-frame">
+            <img src="assets/images/MY Image.png" alt="Muhammad Musab - Web Developer &amp; Graphic Designer"
+              class="hero-cutout-img" onerror="this.src='MY Image.png'" loading="eager">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. TRUSTED TOOLS / TECH STRIP (Continuous Marquee)
+       ========================================================================= -->
+  <section class="tech-marquee-section" id="techStrip">
+    <div class="marquee-track-container">
+      <div class="marquee-track">
+        <!-- Tools List (Duplicated for infinite scroll) -->
+        <div class="tool-badge-item" style="--tool-color: #E34F26;"><i class="fa-brands fa-html5"></i><span
+            class="tool-name">HTML5</span></div>
+        <div class="tool-badge-item" style="--tool-color: #1572B6;"><i class="fa-brands fa-css3-alt"></i><span
+            class="tool-name">CSS3</span></div>
+        <div class="tool-badge-item" style="--tool-color: #F7DF1E;"><i class="fa-brands fa-js"></i><span
+            class="tool-name">JavaScript</span></div>
+        <div class="tool-badge-item" style="--tool-color: #61DAFB;"><i class="fa-brands fa-react"></i><span
+            class="tool-name">React</span></div>
+        <div class="tool-badge-item" style="--tool-color: #777BB4;"><i class="fa-brands fa-php"></i><span
+            class="tool-name">PHP</span></div>
+        <div class="tool-badge-item" style="--tool-color: #3776AB;"><i class="fa-brands fa-python"></i><span
+            class="tool-name">Python</span></div>
+        <div class="tool-badge-item" style="--tool-color: #4479A1;"><i class="fa-solid fa-database"></i><span
+            class="tool-name">MySQL</span></div>
+        <div class="tool-badge-item" style="--tool-color: #7952B3;"><i class="fa-brands fa-bootstrap"></i><span
+            class="tool-name">Bootstrap</span></div>
+        <div class="tool-badge-item" style="--tool-color: #0769AD;"><i class="fa-solid fa-code"></i><span
+            class="tool-name">jQuery</span></div>
+        <div class="tool-badge-item" style="--tool-color: #F05032;"><i class="fa-brands fa-git-alt"></i><span
+            class="tool-name">Git</span></div>
+        <div class="tool-badge-item" style="--tool-color: #06B6D4;"><i class="fa-brands fa-github"></i><span
+            class="tool-name">GitHub</span></div>
+        <div class="tool-badge-item" style="--tool-color: #06B6D4;"><i class="fa-brands fa-css3"></i><span
+            class="tool-name">Tailwind CSS</span></div>
+        <div class="tool-badge-item" style="--tool-color: #779D7A;"><i class="fa-solid fa-network-wired"></i><span
+            class="tool-name">REST APIs</span></div>
+        <div class="tool-badge-item" style="--tool-color: #D4C4A8;"><i class="fa-solid fa-table"></i><span
+            class="tool-name">SQL</span></div>
+        <!-- Duplicated items for loop -->
+        <div class="tool-badge-item" style="--tool-color: #E34F26;"><i class="fa-brands fa-html5"></i><span
+            class="tool-name">HTML5</span></div>
+        <div class="tool-badge-item" style="--tool-color: #1572B6;"><i class="fa-brands fa-css3-alt"></i><span
+            class="tool-name">CSS3</span></div>
+        <div class="tool-badge-item" style="--tool-color: #F7DF1E;"><i class="fa-brands fa-js"></i><span
+            class="tool-name">JavaScript</span></div>
+        <div class="tool-badge-item" style="--tool-color: #61DAFB;"><i class="fa-brands fa-react"></i><span
+            class="tool-name">React</span></div>
+        <div class="tool-badge-item" style="--tool-color: #777BB4;"><i class="fa-brands fa-php"></i><span
+            class="tool-name">PHP</span></div>
+        <div class="tool-badge-item" style="--tool-color: #3776AB;"><i class="fa-brands fa-python"></i><span
+            class="tool-name">Python</span></div>
+        <div class="tool-badge-item" style="--tool-color: #4479A1;"><i class="fa-solid fa-database"></i><span
+            class="tool-name">MySQL</span></div>
+        <div class="tool-badge-item" style="--tool-color: #7952B3;"><i class="fa-brands fa-bootstrap"></i><span
+            class="tool-name">Bootstrap</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. ABOUT ME SECTION (Cream Dotted Background)
+       ========================================================================= -->
+  <section class="section-light" id="about">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <!-- Left Side: Framed Image with Glow Accent & Tilt -->
+        <div class="about-image-col">
+          <div class="about-image-card">
+            <img src="assets/images/About Image.png" alt="Muhammad Musab at Team Session"
+              onerror="this.src='About Image.png'" loading="lazy">
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-years">3+</span>
+            <span class="exp-text">Years of Web<br>Development</span>
+          </div>
+        </div>
+
+        <!-- Right Side: About Copy & CTAs -->
+        <div class="about-text-col">
+          <div class="eyebrow sage-pill" style="align-self: flex-start;">
+            <i class="fa-solid fa-user"></i>
+            <span>About Me</span>
+          </div>
+
+          <h2 class="section-title">Turning Ideas Into Digital Reality</h2>
+
+          <div class="about-paragraphs">
+            <p>
+              I am <strong>Muhammad Musab</strong>, a passionate and detail-driven <strong>Full-Stack Website
+                Developer</strong>. I build custom, responsive, and high-performance websites combining sleek visual
+              appeal with robust backend engineering.
+            </p>
+            <p>
+              My expertise spans the entire development lifecycle — from crafting intuitive user interfaces with modern
+              HTML5, CSS3, and JavaScript, to structuring secure database architectures and server-side logic using PHP
+              and MySQL.
+            </p>
+            <p>
+              Whether you need a bespoke business website, an interactive portal, or a high-converting web application,
+              my mission is to deliver clean code, lightning-fast load times, and an exceptional user experience that
+              drives real results.
+            </p>
+          </div>
+
+          <!-- Highlight Checkpoints -->
+          <div class="about-highlights-grid">
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Modern PHP &amp; MySQL Backends</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Pixel-Perfect Responsive UIs</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>High Performance &amp; Clean Code</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>SEO-Friendly Architecture</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons (CV Lightbox Modal + GitHub Profile) -->
+          <div class="about-actions">
+            <button class="btn btn-gradient open-resume-modal-btn magnetic-btn" id="aboutViewCvBtn">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>View My CV</span>
+            </button>
+            <a href="https://github.com/MuhammadMusab12345" target="_blank" rel="noopener noreferrer"
+              class="btn-github magnetic-btn" id="aboutGithubBtn">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. LATEST PROJECTS SECTION (Cream Dotted Background)
+       ========================================================================= -->
+  <section class="section-light" id="projects" style="padding-top: 40px;">
+    <div class="container">
+
+      <!-- NEW INTRO BLOCK: My Work Overview & Stats -->
+      <div class="projects-intro-block">
+        <div class="projects-intro-grid">
+
+          <!-- Left Side: Headline with Highlight Chip, Description & 3-Stat Counter -->
+          <div class="projects-intro-left">
+            <span class="chip-highlight projects-intro-chip">A Look At My Work.</span>
+            <h2 class="projects-intro-title">Here's What I've Built.</h2>
+            <p class="projects-intro-tagline">Clean Code. Solid Design. Real Results.</p>
+
+            <p class="projects-intro-desc">
+              I approach web development with a focus on simplicity, robust engineering, and visual elegance. Every site
+              I craft is designed to convert visitors into loyal customers while ensuring fast loading speeds across all
+              devices.
+            </p>
+            <p class="projects-intro-desc">
+              Whether architecting secure backend databases or designing responsive front-ends, my focus is always on
+              building practical, reliable, and high-performance solutions.
+            </p>
+
+            <hr class="projects-intro-divider">
+
+            <!-- 3-Stat Row (Counts up on scroll) -->
+            <div class="projects-intro-stats">
+              <div class="projects-stat-box">
+                <span class="projects-stat-number"><span class="project-stat-count" data-target="6">0</span></span>
+                <span class="projects-stat-label">Projects Completed</span>
+              </div>
+              <div class="projects-stat-box">
+                <span class="projects-stat-number"><span class="project-stat-count" data-target="3">0</span><span
+                    class="stat-suffix">+</span></span>
+                <span class="projects-stat-label">Technologies Mastered</span>
+              </div>
+              <div class="projects-stat-box">
+                <span class="projects-stat-number"><span class="project-stat-count" data-target="100">0</span><span
+                    class="stat-suffix">%</span></span>
+                <span class="projects-stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+
+            <hr class="projects-intro-divider">
+
+            <p class="projects-intro-note">
+              Every project below was built from scratch — real code, real websites, live and working.
+            </p>
+          </div>
+
+          <!-- Right Side: Musab Relaxed Photo (3 (2).png) -->
+          <div class="projects-intro-img-col">
+            <div class="projects-intro-img-card">
+              <img src="assets/images/3 (2).png" alt="Muhammad Musab - Full Stack Web Developer"
+                onerror="this.src='MY images/3 (2).png'" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section Header with View All Link -->
+      <div class="section-header with-action">
+        <div>
+          <div class="eyebrow slate-pill">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Featured Portfolio</span>
+          </div>
+          <h2 class="section-title">Latest Projects</h2>
+          <p class="section-subtitle">
+            A curated selection of modern web development projects crafted for real-world performance.
+          </p>
+        </div>
+        <a href="projects.html" class="view-all-link" id="viewAllProjectsBtn">
+          <span>View All Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- 3 Normal Websites Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Shale Pizzas -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (4).png" alt="Shale Pizzas" onerror="this.src='My Websites (4).png'"
+              loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">UI/UX</span>
+            </div>
+            <h3 class="project-title">Shale Pizzas</h3>
+            <p class="project-desc">A bold, modern pizza restaurant website with fiery orange accents, interactive
+              digital menus, online reservation flow, and mouth-watering visuals.</p>
+            <div class="project-footer">
+              <a href="https://laiba-iqbal.github.io/shale-pizza/" target="_blank" rel="noopener noreferrer"
+                class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: FurEver Care -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (5).png" alt="FurEver Care" onerror="this.src='My Websites (5).png'"
+              loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Responsive Design</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">Front-End</span>
+            </div>
+            <h3 class="project-title">FurEver Care</h3>
+            <p class="project-desc">A friendly pet-care and veterinary services website with cheerful yellow accents,
+              playful illustrations, service appointment booking, and wellness info.</p>
+            <div class="project-footer">
+              <a href="https://abdul-rafay-art.github.io/furever-care/" target="_blank" rel="noopener noreferrer"
+                class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: School's Info -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <span class="project-badge-tag">Website</span>
+            <img src="assets/images/My Websites (6).png" alt="School's Info" onerror="this.src='My Websites (6).png'"
+              loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Education</span>
+            </div>
+            <h3 class="project-title">School's Info</h3>
+            <p class="project-desc">A clean, professional school information and student admissions portal with
+              structured academic pathways, faculty highlights, and online enrollment guides.</p>
+            <div class="project-footer">
+              <a href="https://muhammadmusab12345.github.io/School-Informations/" target="_blank"
+                rel="noopener noreferrer" class="project-visit-btn">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SERVICES I OFFER SECTION (Dark Navy Background)
+       ========================================================================= -->
+  <section class="section-dark" id="services">
+    <!-- Depth Glow Blobs -->
+    <div class="glow-blob sage" style="top: 20%; right: 5%; width: 400px; height: 400px;"></div>
+    <div class="glow-blob slate" style="bottom: 10%; left: 5%; width: 350px; height: 350px;"></div>
+
+    <div class="container">
+
+      <div class="section-header text-center">
+        <div class="eyebrow sage-pill">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>What I Do</span>
+        </div>
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-subtitle">
+          Specialized, high-end web development services built with modern technologies, scalable architectures, and
+          clean code.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-code"></i></div>
+          <span class="service-badge">Front-End</span>
+          <h3 class="service-title">Custom Web Design</h3>
+          <p class="service-desc">Tailor-made, bespoke web layouts crafted to reflect your unique brand identity with
+            cutting-edge visual aesthetics and luxury finishes.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-server"></i></div>
+          <span class="service-badge">Full-Stack</span>
+          <h3 class="service-title">Full-Stack Web Development</h3>
+          <p class="service-desc">End-to-end web engineering combining clean, modern front-end interfaces with secure,
+            scalable PHP &amp; MySQL back-end architecture.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <span class="service-badge">Mobile-First</span>
+          <h3 class="service-title">Responsive Website Design</h3>
+          <p class="service-desc">Pixel-perfect, fluid experiences engineered to look and perform flawlessly across all
+            screen sizes — mobile, tablet, laptop, and ultra-wide.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-pen-ruler"></i></div>
+          <span class="service-badge">User Experience</span>
+          <h3 class="service-title">UI / UX Prototyping</h3>
+          <p class="service-desc">Intuitive user experiences, ergonomic workflows, and micro-interactions designed to
+            maximize engagement and conversions.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-robot"></i></div>
+          <span class="service-badge">Automation</span>
+          <h3 class="service-title">Website Chatbot Integration</h3>
+          <p class="service-desc">Custom, intelligent conversational chatbots seamlessly embedded into your website to
+            automate customer inquiries and capture leads 24/7.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <span class="service-badge">Optimization</span>
+          <h3 class="service-title">SEO &amp; Performance Optimization</h3>
+          <p class="service-desc">Speed optimization, clean semantic HTML5 markup, structured metadata, and on-page SEO
+            best practices to help your site rank #1.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="service-badge">Support</span>
+          <h3 class="service-title">Website Maintenance &amp; Security</h3>
+          <p class="service-desc">Proactive updates, bug fixes, database backups, performance monitoring, and security
+            patching to keep your web presence running 24/7.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       NEW SECTION: FAQ (Dark Navy Accordion)
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="glow-blob sage" style="top: 25%; left: 5%; width: 400px; height: 400px;"></div>
+    <div class="glow-blob slate" style="bottom: 15%; right: 5%; width: 420px; height: 420px;"></div>
+
+    <div class="container">
+
+      <div class="faq-header">
+        <div class="eyebrow sage-pill" style="margin: 0 auto 12px;">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>FAQ</span>
+        </div>
+        <h2 class="faq-title">
+          <span class="light-weight">Got Questions?</span> <span class="bold-weight">Already Answered.</span>
+        </h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Everything you need to know about starting a project, workflow, timelines, and support.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-list">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">How does the collaboration/work process work?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                I start by understanding your goals and requirements, then move through planning, design, development,
+                and testing before launching your website.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">What do you need before starting a project?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Just your business details, any branding assets you already have (logo, colors), and a clear idea of
+                what you want the website to achieve.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">Do you provide ongoing support after the project is completed?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes, I offer maintenance and support packages to keep your website updated and running smoothly after
+                launch.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">How long does a typical website take to build?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Depending on complexity, most websites are completed within 1–3 weeks from approved design to launch.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">What technologies do you work with?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                HTML, CSS, JavaScript, React, PHP, SQL, and other modern web development tools and frameworks.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">How can I get a quote?</span>
+              <div class="faq-icon-btn"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Simply reach out through the contact page with your project details, and I'll get back to you with a
+                clear, transparent quote.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. STATS BANNER (Solid Gradient #415A77 -> #779D7A)
+       ========================================================================= -->
+  <section class="stats-banner-section" id="statsBanner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number-wrap"><span class="stat-count" data-target="25">25</span>+</div>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number-wrap"><span class="stat-count" data-target="40">40</span>+</div>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number-wrap"><span class="stat-count" data-target="3">3</span>+</div>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number-wrap"><span class="stat-count" data-target="100">100</span>%</div>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number-wrap"><span class="stat-count" data-target="24">24</span>/7</div>
+          <span class="stat-label">Support Availability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. CLIENT FEEDBACK SECTION (Cream Dotted Background - Carousel)
+       ========================================================================= -->
+  <section class="section-light" id="testimonials">
+    <div class="container">
+
+      <div class="section-header with-action">
+        <div>
+          <div class="eyebrow tan-pill">
+            <i class="fa-solid fa-comments"></i>
+            <span>Testimonials</span>
+          </div>
+          <h2 class="section-title">Client Feedback</h2>
+          <p class="section-subtitle">
+            What business owners, technical leads, and founders say about working with Muhammad Musab.
+          </p>
+        </div>
+        <div class="view-all-link" style="cursor: default;">
+          <i class="fa-solid fa-star" style="color: #F7B731;"></i>
+          <span>5.0 Star Rated (25+ Reviews)</span>
+        </div>
+      </div>
+
+      <!-- Testimonials Carousel Track -->
+      <div class="testimonials-wrapper">
+        <div class="testimonials-carousel" id="testimonialsCarousel">
+          <div class="testimonials-track" id="testimonialsTrack">
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"Muhammad Musab transformed our entire web infrastructure. The website
+                  loads in under a second, the backend architecture is rock-solid, and our conversion rate jumped by
+                  42%!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #415A77;">AV</div>
+                  <div class="author-details"><span class="author-name">Alexander Vance</span><span
+                      class="author-role">Founder &amp; CEO • Vance Digital Media</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"Working with Musab was an absolute pleasure. His mastery of full-stack
+                  development and eye for clean code meant zero bugs on launch day. He delivers luxury-level quality."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #779D7A;">SM</div>
+                  <div class="author-details"><span class="author-name">Sophia Martinez</span><span
+                      class="author-role">Product Director • AuraTech Solutions</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"Musab engineered our custom database system with PHP and MySQL and
+                  built a front-end that our clients constantly compliment. Outstanding communication and speed."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #D4C4A8; color: #0D1B2A;">DS</div>
+                  <div class="author-details"><span class="author-name">David Sterling</span><span
+                      class="author-role">Operations Head • Sterling &amp; Partners</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"The attention to micro-animations, mobile responsiveness, and clean
+                  semantic code is rare to find. Musab solved complex backend queries effortlessly."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #1B263B;">ER</div>
+                  <div class="author-details"><span class="author-name">Elena Rostova</span><span
+                      class="author-role">Creative Director • Velox Interactive</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"Musab built our patient appointment and scheduling system from scratch.
+                  His database design was scalable and secure, exceeding all benchmarks."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #415A77;">MC</div>
+                  <div class="author-details"><span class="author-name">Marcus Chen</span><span class="author-role">Tech
+                      Lead • Nexus Health</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-wrap">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-feedback">"Our boutique hotel website turned out breathtaking. Smooth scrolling,
+                  lightning-fast reservations, and flawless mobile experience. Musab is a true craftsman."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background-color: #779D7A;">ID</div>
+                  <div class="author-details"><span class="author-name">Isabella Dubois</span><span
+                      class="author-role">Marketing Head • Lumière Hospitality</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Arrows & Dots -->
+        <div class="carousel-controls">
+          <button class="carousel-arrow-btn" id="prevReviewBtn" aria-label="Previous reviews">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-arrow-btn" id="nextReviewBtn" aria-label="Next reviews">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. MY PROCESS SECTION (Dark Navy with Numbered Timeline)
+       ========================================================================= -->
+  <section class="section-dark" id="process">
+    <div class="glow-blob slate" style="top: 10%; left: 10%; width: 400px; height: 400px;"></div>
+    <div class="glow-blob sage" style="bottom: 10%; right: 10%; width: 350px; height: 350px;"></div>
+
+    <div class="container">
+
+      <div class="section-header text-center">
+        <div class="eyebrow sage-pill">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span>My Process</span>
+        </div>
+        <h2 class="section-title">A Simple, Proven Process</h2>
+        <p class="section-subtitle">
+          How I take your vision from initial concept to a high-performing, fully-tested live website.
+        </p>
+      </div>
+
+      <!-- Horizontal Numbered Timeline -->
+      <div class="process-timeline-wrap">
+        <div class="timeline-track-line">
+          <div class="timeline-progress-line" id="timelineProgressLine"></div>
+        </div>
+
+        <div class="process-steps-grid">
+          <div class="process-step-node">
+            <div class="step-node-circle">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">Analyzing project goals, target audience, technical specs, and functional
+              specifications.</p>
+          </div>
+          <div class="process-step-node">
+            <div class="step-node-circle">02</div>
+            <h3 class="step-title">Plan</h3>
+            <p class="step-desc">Structuring information architecture, database schema, tech stack choices, and
+              milestones.</p>
+          </div>
+          <div class="process-step-node">
+            <div class="step-node-circle">03</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">Crafting the luxury visual direction, interactive wireframes, component systems, and
+              typography.</p>
+          </div>
+          <div class="process-step-node">
+            <div class="step-node-circle">04</div>
+            <h3 class="step-title">Develop</h3>
+            <p class="step-desc">Writing clean, semantic front-end code and robust PHP/SQL backend logic with zero
+              technical debt.</p>
+          </div>
+          <div class="process-step-node">
+            <div class="step-node-circle">05</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">Cross-browser testing, SEO audits, speed optimization, domain/hosting setup, and live
+              deployment.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. PRICING SECTION (Cream Dotted Background)
+       ========================================================================= -->
+  <section class="section-light" id="pricing">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <div class="eyebrow slate-pill">
+          <i class="fa-solid fa-tags"></i>
+          <span>Transparent Packages</span>
+        </div>
+        <h2 class="section-title">Simple, Value-Driven Pricing</h2>
+        <p class="section-subtitle">
+          Clear, straightforward web development packages designed to deliver maximum return on investment.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Basic Tier -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-tier-name">Basic</h3>
+            <p class="pricing-tier-tagline">Essential web presence for personal projects &amp; simple websites</p>
+            <div class="price-box">
+              <span class="price-currency">$</span>
+              <span class="price-amount">26</span>
+              <span class="price-period">/ project</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Proper front-end
+                (basic)</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Basic back-end
+                functionality</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Beautiful, clean look</span>
+            </div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Full source code
+                provided</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>GitHub repository hosting
+                included</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Responsive layout (Mobile
+                &amp; Desktop)</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-outline pricing-btn magnetic-btn"
+            style="color: var(--text-dark-primary); border-color: var(--accent-slate);">
+            <span>Get Started</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Standard Tier (Most Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-tier-name">Standard</h3>
+            <p class="pricing-tier-tagline">High-impact solution tailored for growing businesses &amp; startups</p>
+            <div class="price-box">
+              <span class="price-currency">$</span>
+              <span class="price-amount">40</span>
+              <span class="price-period">/ project</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Premium, eye-catching web
+                look</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Premium front-end
+                development</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Premium back-end
+                integration</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Full source code + GitHub
+                repo link</span></div>
+            <!-- <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Domain + Hosting
+                included</span></div> -->
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>High-speed loading &amp;
+                optimization</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>SEO-ready code
+                structure</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-gradient pricing-btn magnetic-btn">
+            <span>Choose Standard</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Premium Tier -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-tier-name">Premium</h3>
+            <p class="pricing-tier-tagline">All-inclusive enterprise package with VIP ongoing changes</p>
+            <div class="price-box">
+              <span class="price-currency">$</span>
+              <span class="price-amount">60</span>
+              <span class="price-period">/ project</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Everything included in
+                Standard package</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Domain + Hosting
+                included</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>5 months of free
+                changes/updates included</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Advanced database &amp;
+                custom backend</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Full UI/UX custom
+                interactive elements</span></div>
+            <div class="pricing-feature-item"><i class="fa-solid fa-circle-check"></i><span>Priority 24/7 technical
+                support</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-outline pricing-btn magnetic-btn"
+            style="color: var(--text-dark-primary); border-color: var(--accent-slate);">
+            <span>Get Premium</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       NEW SECTION: CTA BANNER (Directly Above Footer)
+       ========================================================================= -->
+  <section class="cta-banner-section" id="ctaBanner">
+    <div class="glow-blob sage" style="top: 10%; right: 15%; width: 350px; height: 350px;"></div>
+    <div class="glow-blob slate" style="bottom: 10%; left: 10%; width: 400px; height: 400px;"></div>
+
+    <div class="container">
+      <div class="cta-banner-grid">
+
+        <!-- Left Side: Text & Actions -->
+        <div class="cta-banner-content">
+          <div class="cta-banner-eyebrow">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>GET IN TOUCH</span>
+          </div>
+
+          <h2 class="cta-banner-title">
+            <span class="cta-banner-chip">Let's Build Something Great.</span>
+            <span class="cta-banner-title-plain">And Bring Your Vision to Life!</span>
+          </h2>
+
+          <p class="cta-banner-tagline">More Projects. Better Websites. Real Results.</p>
+
+          <p class="cta-banner-desc">
+            Ready for a website that doesn't just look good but actually performs? Let's talk about where your business
+            stands today, what could make it more visible online, and what the right next steps look like.
+          </p>
+
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="cta-banner-main-btn magnetic-btn">
+              <span>Start Your Project</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="cta-banner-arrow-btn magnetic-btn" aria-label="Go to Contact Page">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Musab Photo with Pulsing Glow (4.png) -->
+        <div class="cta-banner-img-col">
+          <div class="cta-photo-wrap">
+            <div class="cta-pulse-glow"></div>
+            <img src="assets/images/4.png" alt="Muhammad Musab - Let's build your website" class="cta-banner-photo"
+              onerror="this.src='MY images/4.png'" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Tagline -->
+        <div class="footer-col-brand">
+          <a href="#hero" class="brand-logo footer-brand-logo">
+            <img src="assets/images/Logo 2.png" alt="Muhammad Musab Logo" class="brand-logo-img"
+              onerror="this.src='Logo 2.png'">
+          </a>
+          <p class="footer-tagline-quote">"Develop. Build. Deliver."</p>
+          <p class="footer-desc">
+            Crafting state-of-the-art web solutions with clean front-end code, scalable PHP backends, and intuitive user
+            experiences.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+                Home</a></li>
+            <li><a href="#services" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> Services</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> All Projects</a></li>
+            <li><a href="#about" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> About Me</a></li>
+            <li><a href="#process" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> My Process</a></li>
+            <li><a href="#pricing" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> Pricing</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Web Dev Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Custom Web Design</a></li>
+            <li><a href="#services" class="footer-link">Full-Stack Development</a></li>
+            <li><a href="#services" class="footer-link">Responsive Web Design</a></li>
+            <li><a href="#services" class="footer-link">UI / UX Prototyping</a></li>
+            <li><a href="#services" class="footer-link">Website Chatbots</a></li>
+            <li><a href="#services" class="footer-link">SEO Optimization</a></li>
+            <li><a href="#services" class="footer-link">Website Maintenance</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Stay Connected</h4>
+          <p class="footer-desc" style="margin-bottom: 16px;">
+            Subscribe to get occasional web engineering insights and design breakdowns.
+          </p>
+          <form class="footer-newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to Muhammad Musab\'s newsletter!'); this.reset();">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your email..." required class="newsletter-input">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="contact-socials-wrap" style="margin-top: 24px;">
+            <a href="https://www.facebook.com/share/1CXeQoBHsq/" target="_blank" rel="noopener noreferrer"
+              class="social-circle-btn" aria-label="Facebook Profile">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/muhammadmusab.official?stkn=dGZvdHVnMjB5eTlx" target="_blank"
+              rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram Profile">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/MuhammadMusab12345" target="_blank" rel="noopener noreferrer"
+              class="social-circle-btn" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:musabmehtabmusab1@gmail.com" class="social-circle-btn" aria-label="Email Musab">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Muhammad Musab. All Rights Reserved. Engineered with precision.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <button class="open-resume-modal-btn footer-link"
+            style="background:none; border:none; color:inherit; cursor:pointer;">View Résumé</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Resume Lightbox Modal -->
+  <div class="resume-modal-overlay" id="resumeModalOverlay">
+    <div class="resume-modal-card">
+      <div class="resume-modal-header">
+        <div class="modal-header-title">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Muhammad Musab — Official Résumé</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-sage-solid" id="downloadResumeBtn" style="padding: 8px 18px; font-size: 0.85rem;">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </button>
+          <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <img
+          src="https://raw.githubusercontent.com/MuhammadMusab12345/My-Resume/refs/heads/main/Muhammad-Musab-Resume.png"
+          alt="Muhammad Musab Resume" id="resumeModalImage" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/resume-modal.js"></script>
+
+</body>
+
+</html>
